@@ -9,8 +9,11 @@
   "cSpell.enableFiletypes": ["javascript"],
   "cSpell.language": "en,pt,pt_BR",
   "cSpell.words": [
+    "brakepoints",
     "codeburger",
     "Codeburger",
+    "homelogo",
+    "Homelogo",
     "hookform",
     "middlewares",
     "originalname",

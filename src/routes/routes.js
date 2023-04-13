@@ -1,6 +1,7 @@
 import React from 'react'
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 
+import Home from '../containers/Home'
 import Login from '../containers/Login'
 import Register from '../containers/Register'
 
@@ -10,6 +11,7 @@ function Routes() {
       <Switch>
         <Route component={Login} path="/login" />
         <Route component={Register} path="/cadastro" />
+        <Route component={Home} path="/" />
       </Switch>
     </Router>
   )

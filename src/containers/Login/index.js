@@ -6,6 +6,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import * as Yup from 'yup'
 import { toast } from 'react-toastify'
+import { Link, useHistory } from 'react-router-dom'
 
 import { useUser } from '../../hooks/UserContext'
 import LoginImg from '../../assets/burger.svg'
@@ -23,6 +24,7 @@ import {
 } from './styles'
 
 function Login() {
+  const history = useHistory()
   const { putUserData } = useUser()
 
   const schema = Yup.object().shape({
@@ -54,6 +56,10 @@ function Login() {
     )
 
     putUserData(data)
+
+    setTimeout(() => {
+      history.push('/')
+    }, 1000)
   }
 
   return (
@@ -77,7 +83,10 @@ function Login() {
           </Button>
         </form>
         <SignInLink>
-          Não possui conta? <a> Cadastre-se</a>
+          Não possui conta?{''}
+          <Link style={{ color: 'white' }} to="/cadastro">
+            {''} Cadastre-se
+          </Link>
         </SignInLink>
       </ContainerItens>
     </Container>
