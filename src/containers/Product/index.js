@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react'
 
 import Productlogo from '../../assets/layout2.svg'
+import CardProduct from '../../components/CardProduct'
 import api from '../../services/api'
-import { Container, ProductImg, CategoryButton, CategoryMenu } from './styles'
+import formatCurrency from '../../utils/formatCurrency'
+import { Container, ProductImg, CategoryButton, CategoryMenu, ProductContainer } from './styles'
 
 function Product() {
   const [categories, setCategories] = useState([])
+  const [products, setProducts] = useState([])
+  const [filteredProducts, setfilteredProducts] = useState([])
+  const [activeCategory, setActiveCategory] = useState(0)
 
   useEffect(() => {
     async function loadCategories() {
@@ -16,17 +21,53 @@ function Product() {
       setCategories(newCategories)
     }
 
+    async function loadProducts() {
+      const { data: allProducts } = await api.get('products')
+
+      const newProducts = allProducts.map((product) => {
+        return { ...product, formatedPrice: formatCurrency(product.price) }
+      })
+
+      setProducts(newProducts)
+    }
+
+    loadProducts()
     loadCategories()
   }, [])
+
+  useEffect(() => {
+    if (activeCategory === 0) {
+      setfilteredProducts(products)
+    } else {
+      const newFilteredProducts = products.filter(
+        (product) => product.category_id === activeCategory
+      )
+
+      setfilteredProducts(newFilteredProducts)
+    }
+  }, [activeCategory, products])
+
   return (
     <Container>
       <ProductImg src={Productlogo} alt="logo da home" />
       <CategoryMenu>
         {categories &&
           categories.map((category) => (
-            <CategoryButton key={category.id}>{category.name}</CategoryButton>
+            <CategoryButton
+              key={category.id}
+              isActiveCategory={activeCategory === category.id}
+              onClick={() => {
+                setActiveCategory(category.id)
+              }}
+            >
+              {category.name}
+            </CategoryButton>
           ))}
       </CategoryMenu>
+      <ProductContainer>
+        {filteredProducts &&
+          filteredProducts.map((product) => <CardProduct key={product.id} product={product} />)}
+      </ProductContainer>
     </Container>
   )
 }
