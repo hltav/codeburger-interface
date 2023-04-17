@@ -11,7 +11,7 @@ import { Link, useHistory } from 'react-router-dom'
 import { useUser } from '../../hooks/UserContext'
 import LoginImg from '../../assets/burger.svg'
 import Logo from '../../assets/logo_burger.svg'
-import Button from '../../components/Button'
+import { Button } from '../../components'
 import api from '../../services/api'
 import {
   Container,
@@ -23,7 +23,7 @@ import {
   ErrorMessage
 } from './styles'
 
-function Login() {
+export function Login() {
   const history = useHistory()
   const { putUserData } = useUser()
 
@@ -92,5 +92,3 @@ function Login() {
     </Container>
   )
 }
-
-export default Login

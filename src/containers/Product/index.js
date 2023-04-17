@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 
 import Productlogo from '../../assets/layout2.svg'
-import CardProduct from '../../components/CardProduct'
+import { CartProduct } from '../../components'
 import api from '../../services/api'
 import formatCurrency from '../../utils/formatCurrency'
 import { Container, ProductImg, CategoryButton, CategoryMenu, ProductContainer } from './styles'
 
-function Product() {
+export function Product() {
   const [categories, setCategories] = useState([])
   const [products, setProducts] = useState([])
   const [filteredProducts, setfilteredProducts] = useState([])
@@ -66,10 +66,8 @@ function Product() {
       </CategoryMenu>
       <ProductContainer>
         {filteredProducts &&
-          filteredProducts.map((product) => <CardProduct key={product.id} product={product} />)}
+          filteredProducts.map((product) => <CartProduct key={product.id} product={product} />)}
       </ProductContainer>
     </Container>
   )
 }
-
-export default Product
