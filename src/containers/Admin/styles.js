@@ -6,5 +6,8 @@ export const Container = styled.div`
   min-height: 100vh;
   min-width: 100vw;
   background: #efefef;
-  justify-content: space-between;
+  justify-content: flex-start;
+`
+export const ContainerItems = styled.div`
+  padding: 20px;
 `
