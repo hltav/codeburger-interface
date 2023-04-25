@@ -5,7 +5,6 @@ import React from 'react'
 import { ContainerButton } from './styles'
 
 export function Button({ children, ...rest }) {
-  console.log(children)
   return <ContainerButton {...rest}>{children}</ContainerButton>
 }
 

@@ -11,17 +11,9 @@ import { Link, useHistory } from 'react-router-dom'
 import { useUser } from '../../hooks/UserContext'
 import LoginImg from '../../assets/burger.svg'
 import Logo from '../../assets/logo_burger.svg'
-import { Button } from '../../components'
+import { Button, ErrorMessage } from '../../components'
 import api from '../../services/api'
-import {
-  Container,
-  LoginImage,
-  ContainerItens,
-  Label,
-  Input,
-  SignInLink,
-  ErrorMessage
-} from './styles'
+import { Container, LoginImage, ContainerItens, Label, Input, SignInLink } from './styles'
 
 export function Login() {
   const history = useHistory()

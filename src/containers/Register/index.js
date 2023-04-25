@@ -9,17 +9,9 @@ import * as Yup from 'yup'
 
 import RegisterImg from '../../assets/carne_burger.svg'
 import Logo from '../../assets/logo_burger.svg'
-import { Button } from '../../components'
+import { Button, ErrorMessage } from '../../components'
 import api from '../../services/api'
-import {
-  Container,
-  RegisterImage,
-  ContainerItens,
-  Label,
-  Input,
-  SignInLink,
-  ErrorMessage
-} from './styles'
+import { Container, RegisterImage, ContainerItens, Label, Input, SignInLink } from './styles'
 
 export function Register() {
   const schema = Yup.object().shape({

@@ -66,15 +66,6 @@ export const Input = styled.input`
   border: ${(props) => (props.error ? '2px solid #CC1717' : 'none')};
   padding-left: 10px;
 `
-export const ErrorMessage = styled.p`
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #fff;
-  margin-top: 5px;
-`
-
 export const SignInLink = styled.p`
   font-style: normal;
   font-weight: 300;

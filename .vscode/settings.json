@@ -7,7 +7,7 @@
   },
   "editor.formatOnSave": true,
   "cSpell.enableFiletypes": ["javascript"],
-  "cSpell.language": "en,pt,pt_BR",
+  "cSpell.language": "pt_BR,en,pt,",
   "cSpell.words": [
     "brakepoints",
     "Cartlogo",
@@ -27,5 +27,8 @@
     "Roboto",
     "setfiltered",
     "toastify"
-  ]
+  ],
+  "cSpell.languageSettings": [],
+  "workbench.editor.historyBasedLanguageDetection": true,
+  "workbench.editor.preferHistoryBasedLanguageDetection": true
 }
