@@ -1,3 +1,5 @@
+Screenshot_116.png
+
 <h1>Codeburger</h1>
 
 Este é um projeto de uma hamburgueria online onde é possível criar um cadastro de usuários,
