@@ -1,10 +1,11 @@
-Screenshot_116.png
-
 <h1>Codeburger</h1>
 
 Este é um projeto de uma hamburgueria online onde é possível criar um cadastro de usuários,
 visualizar os preços e escolher produtos, adicionar e remover itens do carrinho de compras e
 gerenciar o conteúdo do cardápio através da tela de administração.
+
+<p>Página de Login</p>
+<img src="./readme-img/Screenshot_116.png">
 
 <h2>Tecnologias utilizadas</h2>
 
