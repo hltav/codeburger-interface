@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+<h1>Codeburger</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de uma hamburgueria online onde é possível criar um cadastro de usuários,
+visualizar os preços e escolher produtos, adicionar e remover itens do carrinho de compras e
+gerenciar o conteúdo do cardápio através da tela de administração.
 
-## Available Scripts
+<h2>Tecnologias utilizadas</h2>
 
-In the project directory, you can run:
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-### `npm start`
+HTML CSS JavaScript Node.js Express.js Sequelize Postgres SQL
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h1>Como utilizar:</h1>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Para utilizar este projeto em sua máquina local, siga os passos abaixo:
 
-### `npm test`
+Faça o download ou clone este repositório para sua máquina.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Certifique-se de ter o Node.js instalado em sua máquina.
 
-### `npm run build`
+Na pasta raiz do projeto, instale as dependências com o comando yarn install.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Execute o comando yarn start para iniciar a aplicação.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Acesse a aplicação em seu navegador através do endereço http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h1> Funcionalidades </h1>
 
-### `npm run eject`
+<h2>Funcionalidades</h2>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Na tela inicial da aplicação, é possível criar uma conta de usuário preenchendo um formulário com
+nome, email e senha.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h2>Visualização de preços e escolha de produtos</h2>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Após realizar o login, o usuário tem acesso à tela de cardápio, onde pode visualizar os preços e
+escolher os produtos que deseja adicionar ao carrinho de compras.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h2>Carrinho de compras</h2>
 
-## Learn More
+Na tela de carrinho de compras, é possível adicionar e remover itens, além de visualizar o total a
+ser pago pelos produtos selecionados.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h2>Tela de administração</h2>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Na tela de administração, é possível gerenciar o conteúdo do cardápio, editando os preços dos
+produtos já existentes, adicionando novos produtos e removendo produtos existentes.
 
-### Code Splitting
+<h1>Contribuição</h1>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto é de código aberto e qualquer contribuição é bem-vinda. Se você encontrar um bug ou
+tiver uma ideia de melhoria, por favor, crie uma issue neste repositório. Se você deseja contribuir
+com código, por favor, abra uma pull request e descreva suas alterações em detalhes.
