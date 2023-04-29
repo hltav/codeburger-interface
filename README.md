@@ -7,6 +7,32 @@ gerenciar o conteúdo do cardápio através da tela de administração.
 <p>Página de Login</p>
 <img src="./readme-img/Screenshot_116.png">
 
+<h2>Páginas para usuário</h2>
+
+<p>Página de Home</p>
+<img src="./readme-img/Screenshot_117.png">
+<img src="./readme-img/Screenshot_118.png">
+
+<p>Página de Produtos</p>
+<img src="./readme-img/Screenshot_119.png">
+
+<p>Página de Carrinho</p>
+<img src="./readme-img/Screenshot_120.png">
+
+<h2>Páginas para Admin</h2>
+
+<p>Página de Pedidos</p>
+<img src="./readme-img/Screenshot_107.png">
+
+<p>Página de Produtos Cadastrados</p>
+<img src="./readme-img/Screenshot_108.png">
+
+<p>Página de Edição de Produtos</p>
+<img src="./readme-img/Screenshot_109.png">
+
+<p>Página de Adição de Produtos</p>
+<img src="./readme-img/Screenshot_110.png">
+
 <h2>Tecnologias utilizadas</h2>
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
